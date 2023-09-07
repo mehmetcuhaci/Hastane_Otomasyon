@@ -419,6 +419,16 @@ namespace Hastane_Otomasyon
             Form1 form1=new Form1();
             form1.ShowDialog();
         }
+
+        private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 

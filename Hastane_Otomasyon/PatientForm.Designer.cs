@@ -89,6 +89,8 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(847, 261);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
+            this.dataGridView1.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.dataGridView1_CellStateChanged);
             // 
             // button1
             // 
@@ -298,7 +300,7 @@
             this.txtHastaetel.MaxLength = 10;
             this.txtHastaetel.Name = "txtHastaetel";
             this.txtHastaetel.Size = new System.Drawing.Size(132, 20);
-            this.txtHastaetel.TabIndex = 24;
+            this.txtHastaetel.TabIndex = 1;
             this.txtHastaetel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHastaetel_KeyPress);
             // 
             // txtHastaetc
@@ -307,7 +309,7 @@
             this.txtHastaetc.MaxLength = 11;
             this.txtHastaetc.Name = "txtHastaetc";
             this.txtHastaetc.Size = new System.Drawing.Size(110, 20);
-            this.txtHastaetc.TabIndex = 22;
+            this.txtHastaetc.TabIndex = 2;
             this.txtHastaetc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHastaetc_KeyPress);
             // 
             // txtHastaeis
@@ -316,7 +318,7 @@
             this.txtHastaeis.Location = new System.Drawing.Point(112, 27);
             this.txtHastaeis.Name = "txtHastaeis";
             this.txtHastaeis.Size = new System.Drawing.Size(110, 22);
-            this.txtHastaeis.TabIndex = 20;
+            this.txtHastaeis.TabIndex = 0;
             this.txtHastaeis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHastaeis_KeyPress);
             // 
             // label1
@@ -342,6 +344,8 @@
             // txtHastaYas
             // 
             this.txtHastaYas.Location = new System.Drawing.Point(368, 72);
+            this.txtHastaYas.MaxDate = new System.DateTime(2023, 12, 12, 0, 0, 0, 0);
+            this.txtHastaYas.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.txtHastaYas.Name = "txtHastaYas";
             this.txtHastaYas.Size = new System.Drawing.Size(132, 20);
             this.txtHastaYas.TabIndex = 19;
@@ -415,7 +419,7 @@
             this.btnTemiz.Location = new System.Drawing.Point(301, 108);
             this.btnTemiz.Name = "btnTemiz";
             this.btnTemiz.Size = new System.Drawing.Size(106, 43);
-            this.btnTemiz.TabIndex = 27;
+            this.btnTemiz.TabIndex = 3;
             this.btnTemiz.Text = "TEMİZLE";
             this.btnTemiz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTemiz.UseVisualStyleBackColor = true;
@@ -458,7 +462,7 @@
             this.txtHastaIsim.Location = new System.Drawing.Point(154, 71);
             this.txtHastaIsim.Name = "txtHastaIsim";
             this.txtHastaIsim.Size = new System.Drawing.Size(110, 22);
-            this.txtHastaIsim.TabIndex = 22;
+            this.txtHastaIsim.TabIndex = 0;
             this.txtHastaIsim.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHastaIsim_KeyPress);
             // 
             // txtHastaTc
@@ -467,7 +471,7 @@
             this.txtHastaTc.MaxLength = 11;
             this.txtHastaTc.Name = "txtHastaTc";
             this.txtHastaTc.Size = new System.Drawing.Size(110, 20);
-            this.txtHastaTc.TabIndex = 11;
+            this.txtHastaTc.TabIndex = 2;
             this.txtHastaTc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHastaTc_KeyPress);
             // 
             // label8
@@ -489,7 +493,7 @@
             this.btnAra.Location = new System.Drawing.Point(301, 50);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(106, 43);
-            this.btnAra.TabIndex = 5;
+            this.btnAra.TabIndex = 1;
             this.btnAra.Text = "ARA";
             this.btnAra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAra.UseVisualStyleBackColor = true;
