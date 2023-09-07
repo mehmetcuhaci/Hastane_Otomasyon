@@ -185,7 +185,28 @@ namespace Hastane_Otomasyon
                 MessageBox.Show("Lütfen cinsiyet seçiniz!");
                 return;
             }
-           
+
+            // TC kimlik numarasına sahip hastanın varlığını kontrol etmek için sorgu
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string checkQuery = "SELECT COUNT(*) FROM hastalar WHERE hastatc = @hastatc";
+
+                using (SqlCommand checkCommand = new SqlCommand(checkQuery, connection))
+                {
+                    checkCommand.Parameters.AddWithValue("@hastatc", hastatc);
+
+                    int existingPatientCount = (int)checkCommand.ExecuteScalar();
+
+                    if (existingPatientCount > 0)
+                    {
+                        MessageBox.Show("Bu TC Kimlik Numarasına sahip bir hasta zaten mevcut.");
+                        return;
+                    }
+                }
+            }
+
 
 
             if (DateTime.TryParse(hastayasStr, out DateTime hastayas))  //kullanıcının girdiği tarihi doğru bir şekilde ayrıştırma işlemi

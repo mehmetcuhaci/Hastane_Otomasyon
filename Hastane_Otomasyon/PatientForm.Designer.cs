@@ -37,6 +37,7 @@
             this.txtHastaStc = new System.Windows.Forms.TextBox();
             this.btnSil = new System.Windows.Forms.Button();
             this.txtEtc = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnTemiz2 = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnDetay = new System.Windows.Forms.Button();
             this.btnTemiz = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -68,8 +70,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Silme = new System.Windows.Forms.TabPage();
             this.btnYenile3 = new System.Windows.Forms.Button();
-            this.btnDetay = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.txtEtc.SuspendLayout();
@@ -178,11 +178,21 @@
             this.txtEtc.Controls.Add(this.btnEkle);
             this.txtEtc.Location = new System.Drawing.Point(4, 22);
             this.txtEtc.Name = "txtEtc";
-            this.txtEtc.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtEtc.Padding = new System.Windows.Forms.Padding(3);
             this.txtEtc.Size = new System.Drawing.Size(855, 218);
             this.txtEtc.TabIndex = 1;
             this.txtEtc.Text = "Ekleme";
             this.txtEtc.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(16, 183);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(152, 16);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "GİRİŞ TARİH VE SAAT :";
             // 
             // label11
             // 
@@ -388,11 +398,26 @@
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(855, 218);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Arama";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnDetay
+            // 
+            this.btnDetay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDetay.Image = ((System.Drawing.Image)(resources.GetObject("btnDetay.Image")));
+            this.btnDetay.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDetay.Location = new System.Drawing.Point(695, 29);
+            this.btnDetay.Name = "btnDetay";
+            this.btnDetay.Size = new System.Drawing.Size(106, 43);
+            this.btnDetay.TabIndex = 28;
+            this.btnDetay.Text = "DETAY";
+            this.btnDetay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDetay.UseVisualStyleBackColor = true;
+            this.btnDetay.Click += new System.EventHandler(this.btnDetay_Click);
             // 
             // btnTemiz
             // 
@@ -514,7 +539,7 @@
             this.Silme.Controls.Add(this.label6);
             this.Silme.Location = new System.Drawing.Point(4, 22);
             this.Silme.Name = "Silme";
-            this.Silme.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Silme.Padding = new System.Windows.Forms.Padding(3);
             this.Silme.Size = new System.Drawing.Size(855, 218);
             this.Silme.TabIndex = 2;
             this.Silme.Text = "Silme";
@@ -535,36 +560,12 @@
             this.btnYenile3.UseVisualStyleBackColor = true;
             this.btnYenile3.Click += new System.EventHandler(this.btnYenile3_Click);
             // 
-            // btnDetay
-            // 
-            this.btnDetay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDetay.Image = ((System.Drawing.Image)(resources.GetObject("btnDetay.Image")));
-            this.btnDetay.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDetay.Location = new System.Drawing.Point(695, 29);
-            this.btnDetay.Name = "btnDetay";
-            this.btnDetay.Size = new System.Drawing.Size(106, 43);
-            this.btnDetay.TabIndex = 28;
-            this.btnDetay.Text = "DETAY";
-            this.btnDetay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDetay.UseVisualStyleBackColor = true;
-            this.btnDetay.Click += new System.EventHandler(this.btnDetay_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(16, 183);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(152, 16);
-            this.label12.TabIndex = 36;
-            this.label12.Text = "GİRİŞ TARİH VE SAAT :";
-            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(174, 183);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(174, 179);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(147, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
             this.dateTimePicker1.TabIndex = 37;
             // 
             // PatientForm
@@ -638,7 +639,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnYenile3;
         private System.Windows.Forms.Button btnDetay;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
