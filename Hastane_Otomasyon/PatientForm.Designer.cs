@@ -37,7 +37,6 @@
             this.txtHastaStc = new System.Windows.Forms.TextBox();
             this.btnSil = new System.Windows.Forms.Button();
             this.txtEtc = new System.Windows.Forms.TabPage();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnTemiz2 = new System.Windows.Forms.Button();
@@ -70,7 +69,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Silme = new System.Windows.Forms.TabPage();
             this.btnYenile3 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.txtEtc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -156,8 +155,6 @@
             // 
             // txtEtc
             // 
-            this.txtEtc.Controls.Add(this.dateTimePicker1);
-            this.txtEtc.Controls.Add(this.label12);
             this.txtEtc.Controls.Add(this.label11);
             this.txtEtc.Controls.Add(this.richTextBox1);
             this.txtEtc.Controls.Add(this.btnTemiz2);
@@ -183,16 +180,6 @@
             this.txtEtc.TabIndex = 1;
             this.txtEtc.Text = "Ekleme";
             this.txtEtc.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(16, 183);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(152, 16);
-            this.label12.TabIndex = 36;
-            this.label12.Text = "GİRİŞ TARİH VE SAAT :";
             // 
             // label11
             // 
@@ -560,13 +547,17 @@
             this.btnYenile3.UseVisualStyleBackColor = true;
             this.btnYenile3.Click += new System.EventHandler(this.btnYenile3_Click);
             // 
-            // dateTimePicker1
+            // button2
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(174, 179);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
-            this.dateTimePicker1.TabIndex = 37;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(723, 293);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 38);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "GERİ";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // PatientForm
             // 
@@ -574,6 +565,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(886, 585);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
@@ -639,7 +631,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnYenile3;
         private System.Windows.Forms.Button btnDetay;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button2;
     }
 }

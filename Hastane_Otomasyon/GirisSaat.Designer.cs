@@ -283,7 +283,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(7, 338);
+            this.label16.Location = new System.Drawing.Point(12, 181);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(315, 64);
             this.label16.TabIndex = 33;
@@ -482,6 +482,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGeri);
+            this.MaximumSize = new System.Drawing.Size(1689, 717);
+            this.MinimumSize = new System.Drawing.Size(1364, 717);
             this.Name = "GirisSaat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GirisSaat";

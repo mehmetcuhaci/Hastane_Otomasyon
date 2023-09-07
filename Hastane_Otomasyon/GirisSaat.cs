@@ -8,7 +8,7 @@ namespace Hastane_Otomasyon
     public partial class GirisSaat : Form
     {
         private string connectionString = "Data Source=172.16.192.60; Initial Catalog=db_hastane; Integrated Security=FALSE; User ID=mehmetcu; password=Sql123456+";
-        private List<Label> saatLabelListesi = new List<Label>();
+        private List<Label> saatLabelListesi = new List<Label>(); //labelları listeyebilmek için liste fonksiyonu oluştur
 
         public GirisSaat()
         {
@@ -37,19 +37,19 @@ namespace Hastane_Otomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Pazartesi gününün başlangıç ve bitiş tarihlerini ayarla (startDate ve endDate)
+            // seçilen günün başlangıç ve bitiş tarihlerini ayarla (startDate ve endDate)
             DateTime startDate = new DateTime(2023, 09, 04, 00, 00, 00); // Pazartesi gününün başlangıcı
             DateTime endDate = new DateTime(2023, 09, 04, 23, 59, 59);   // Pazartesi gününün sonu
 
-            // Pazartesi gününün toplam hasta sayısını hesapla ve lblToplam'a yazdır
+            // seçilen günün toplam hasta sayısını hesapla ve lblToplam'a yazdır
             int toplamHasta = HastaSayisiniHesapla(startDate, endDate);
             lblToplam.Text = $"{toplamHasta}";
 
-            // 00-02 saat aralığında giriş yapan hastaları hesapla ve label18'den başlayarak ilgili label'lara yazdır
+            // 00-02 saat aralığında giriş yapan hastaları hesapla ve sırasıyla labellara yazdır
             for (int saat = 0; saat < 24; saat += 2)
             {
-                DateTime startTime = startDate.AddHours(saat);
-                DateTime endTime = startDate.AddHours(saat + 2);
+                DateTime startTime = startDate.AddHours(saat); // saatin başlangıcı 
+                DateTime endTime = startDate.AddHours(saat + 2); // ve saatin sonu için 2 arttırdık
 
                 int saatArasiHasta = HastaSayisiniHesapla(startTime, endTime);
 
@@ -211,7 +211,7 @@ namespace Hastane_Otomasyon
 
         }
 
-        // Diğer günler için aynı şekilde button4, button5, vb. ekleyebilirsiniz.
+        
 
         private int HastaSayisiniHesapla(DateTime startDate, DateTime endDate)
         {
