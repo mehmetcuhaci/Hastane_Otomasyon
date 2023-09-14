@@ -15,7 +15,7 @@ namespace Hastane_Otomasyon
         
     {
         // Sql veritabanına ulaşmamızı sağlayan kod
-        private string connectionString = "Data Source=172.16.192.60; Initial Catalog=db_hastane; Integrated Security=FALSE; User ID=mehmetcu; password=Sql123456+";
+        private string connectionString = "Data Source=DESKTOP-F3LQC2T\\SQLEXPRESS; Initial Catalog=db_hastane; Integrated Security=TRUE";
 
 
         public Form1()

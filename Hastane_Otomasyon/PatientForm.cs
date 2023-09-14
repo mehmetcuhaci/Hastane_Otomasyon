@@ -9,7 +9,7 @@ namespace Hastane_Otomasyon
 {
     public partial class PatientForm : Form
     {
-        private string connectionString = "Data Source=172.16.192.60; Initial Catalog=db_hastane; Integrated Security=FALSE; User ID=mehmetcu; password=Sql123456+";
+        private string connectionString = "Data Source=DESKTOP-F3LQC2T\\SQLEXPRESS; Initial Catalog=db_hastane; Integrated Security=TRUE";
 
 
         public PatientForm()
@@ -40,7 +40,7 @@ namespace Hastane_Otomasyon
         {
             string hastatc = txtHastaTc.Text;
             // Hastanın resminin kaydedildiği yolu oluşturma
-            string imagePath = Path.Combine(@"C:\Users\mehmetcu\Desktop\patientimage", $"{hastatc}.jpg");
+            string imagePath = Path.Combine(@"C:\Users\mehme\Desktop\patientimage", $"{hastatc}.jpg");
 
             // Eğer resim dosyası mevcutsa
             if (File.Exists(imagePath))
@@ -237,7 +237,7 @@ namespace Hastane_Otomasyon
 
                                
                                 string imageName = $"{hastatc}.jpg";  // Resmi hastanın adıyla aynı şekilde kaydet
-                                string savePath = Path.Combine(@"C:\Users\mehmetcu\Desktop\patientimage", imageName); // Dosya yolunu oluşturma
+                                string savePath = Path.Combine(@"C:\Users\mehme\Desktop\patientimage", imageName); // Dosya yolunu oluşturma
                                 File.WriteAllBytes(savePath, photo_aray);  // Dosyayı belirtilen yola kaydetme
                             }
                         }

@@ -13,8 +13,11 @@ Yeni  bir hasta kaydý oluþturulabilir. Hasta bilgileri kullanýcý tarafýndan giri
 # 3- Hasta Çýkarma
 Hasta veritabanýndan kayýtlý bir hastayý çýkarýlabilir. T.C. kimlik numarasý gibi benzersiz bir kimlik bilgisi kullanýlarak hasta çýkarma iþlemi gerçekleþtirilir.
 
-# 4- Veritabanýný sorgulama
+# 4- Veritabanýný Sorgulama
 Hasta veritabanýnda arama iþlemleri gerçekleþtirilir. T.C. kimlik numarasý veya hasta adý gibi bilgilerle hýzlýca bulunabilir.
+
+# 5- Tarih-Saat Sorgulama
+Hasta veritabanýnda gün ve saat aralýklarýnda kaç hasta girdiðini hýzlýca görebilir.
 
 Bu tür bir hastane otomasyonu, hastane personelinin veri giriþi ve yönetimini kolaylaþtýrmak, hasta bilgilerini düzeni ve güvenli bir þekilde saklamak, sorgulamak 
 için kullanýlýr. C# ile oluþturulan kullanýcý dostu bir arayüz sayesinde kullanýcýlar bu iþlemleri basit ve hýzlý  bir þekilde gerçekleþtirebilirler.
